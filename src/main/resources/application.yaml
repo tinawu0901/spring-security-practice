@@ -1,0 +1,24 @@
+spring:
+  jackson:
+    time-zone: GMT+8
+  datasource:
+    url:
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      hibernate:
+        ddl-auto: update
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id:
+            client-secret:
+            redirect-uri: 
+            scope:
+              - openid
+              - email
+              - profile
